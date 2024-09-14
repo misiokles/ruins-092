@@ -1,0 +1,87 @@
+{
+	"rn092_livingStone" : 
+	{
+		"name" :
+		{
+			"singular" : "Living Stone",
+			"plural" : "Living Stones"
+		},
+		"upgrades":
+		[
+			"rn092_livingRuin"
+		],
+		"level" : 7,
+		"special" : false,
+		"faction" : "ruins_092", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 2,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 1600
+		},
+		"fightValue" : 3021,
+		"aiValue" : 3772,
+		"growth" : 1,
+		
+		"attack" : 16,
+		"defense" : 22,
+		"hitPoints" : 190,
+		"shots" : 0,
+		"speed" : 6,
+		"damage" :
+		{
+			"min" : 30,
+			"max" : 45
+		},
+		"spellPoints" : 0,
+		"advMapAmount" :
+		{
+			"min" : 5,
+			"max" : 11
+		},
+		"doubleWide" : false,
+		"abilities" : {
+			"immunity" : { 
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype": "earth"
+			},
+			"magicResistance" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "any",
+				"val" : 20
+			},
+			"nonliving" :
+			{
+				"type" : "NON_LIVING"
+			}
+		},
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "ruins092/creatures/livingStone/battle.def",
+			"map" : "ruins092/creatures/livingStone/adventure.def",
+			"iconSmall" : "ruins092/creatures/livingStone/small.png",
+			"iconLarge" : "ruins092/creatures/livingStone/large.png",
+			"timeBetweenFidgets" : 1.00,
+			"animationTime" :
+			{
+				"walk" : 0.90,
+				"idle" : 15.00,
+				"attack" : 0.90
+			}
+		},
+		"sound" :
+		{
+			"attack": "SGLMATTK.wav",
+			"defend": "SGLMDFND.wav",
+			"killed": "SGLMKILL.wav",
+			"move": "SGLMMOVE.wav",
+			"wince": "SGLMWNCE.wav"
+		}
+	}
+}

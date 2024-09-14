@@ -1,0 +1,49 @@
+{
+	"rn092_lempo" : {
+		"army" : [
+			{ "creature" : "rn092_pygmyWarrior", "max" : 15, "min" : 10 }
+		],
+		"class" : "runemaster_092",
+		"spellbook" : [ "visions" ],
+		"images" : {
+			"large" : "ruins092/heroes/lempo/large.bmp",
+			"small" : "ruins092/heroes/lempo/small.bmp",
+			"specialtyLarge" : "ruins092/heroes/lempo/slarge.bmp",
+			"specialtySmall" : "ruins092/heroes/lempo/ssmall.bmp"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "archery" },
+			{ "level" : "basic", "skill" : "tactics" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"bonus1" :
+					{
+						"type" : "NO_TERRAIN_PENALTY",
+						"subtype" : "terrain.rough"
+					},
+				"bonus2" :
+					{
+						"type" : "NO_TERRAIN_PENALTY",
+						"subtype" : "terrain.dirt"
+					},
+				"bonus3" :
+					{
+						"type" : "MOVEMENT",
+						"subtype" : "heroMovementLand",
+						"val" : 200,
+						"valueType" : "BASE_NUMBER"
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Lempo is a hunter by nature. Skillful in the arch, strategist and experienced in mobility, it traces its targets even in the most difficult terrain.",
+			"name" : "Lempo",
+			"specialty" : {
+				"description" : "Hero movement bonus and no penalty in dirt and rough terrains. Start with visions.",
+				"name" : "Hunter Rune",
+				"tooltip" : "Hero movement bonus and no penalty in some terrains. Start with visions."
+			}
+		}
+	}
+}

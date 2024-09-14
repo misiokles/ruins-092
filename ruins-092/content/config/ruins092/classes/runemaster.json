@@ -1,0 +1,85 @@
+{
+	"runemaster_092" :
+	{
+		"animation" : {
+			"battle" : 
+			{
+				"female" : "ruins092/classes/runemaster/female.def",
+				"male"   : "ruins092/classes/runemaster/male.def"
+			}
+		},
+		"mapObject" : {
+			"templates" : {
+				"default" : { 
+					"animation" : "ruins092/classes/runemaster/adventure.def",
+					"editorAnimation": "ruins092/classes/runemaster/editor.def" 
+				}
+			}
+		},
+		"name" : "Runemaster",
+		"faction" : "ruins_092",
+		"commander" : "rn092_hermit",
+		"affinity" : "magic",
+		"primarySkills" :
+		{
+			"attack"     : 1,
+			"defence"    : 1,
+			"spellpower" : 1,
+			"knowledge"  : 2
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 20,
+			"defence"    : 20,
+			"spellpower" : 30,
+			"knowledge"  : 30
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 25,
+			"defence"    : 20,
+			"spellpower" : 25,
+			"knowledge"  : 35
+		},
+		"secondarySkills" :
+		{
+			"airMagic" : 7,
+			"armorer" : 8,
+			"diplomacy" : 5,
+			"eagleEye" : 3,
+			"earthMagic" : 7,
+			"fireMagic" : 6,
+			"intelligence" : 8,
+			"leadership" : 1,
+			"learning" : 8,
+			"logistics" : 3,
+			"luck" : 7,
+			"mysticism" : 5,
+			"navigation" : 2,
+			"offence" : 4,
+			"pathfinding" : 3,
+			"resistance" : 8,
+			"scholar" : 9,
+			"scouting" : 4,
+			"sorcery" : 6,
+			"tactics" : 7,
+			"waterMagic" : 7,
+			"wisdom" : 8,
+			"firstAid" : 5
+		},
+		"defaultTavern" : 2,
+		"tavern" :
+		{
+			"castle" : 0,
+			"conflux" : 4,
+			"dungeon" : 2,
+			"fortress" : 6,
+			"rampart" : 8,
+			"stronghold" : 2,
+			"ruins_092" : 10,
+			"inferno" : 0,
+			"necropolis" : 0,
+			"tower" : 0
+		}
+	}
+}

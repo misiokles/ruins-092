@@ -1,0 +1,44 @@
+{
+	"rn092_ogma" : {
+		"army" : [
+			{ "creature" : "rn092_highStag", "max" : 9, "min" : 4 }
+		],
+		"class" : "runemaster_092",
+		"spellbook" : [ "sorrow" ],
+		"images" : {
+			"large" : "ruins092/heroes/ogma/large.png",
+			"small" : "ruins092/heroes/ogma/small.png",
+			"specialtyLarge" : "ruins092/heroes/ogma/slarge.png",
+			"specialtySmall" : "ruins092/heroes/ogma/ssmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "diplomacy" },
+			{ "level" : "basic", "skill" : "luck" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"morale" :
+					{
+						"type" : "MORALE",
+						"val" : 1,
+						"valueType" : "ADDITIVE_VALUE"
+					},
+				"mirth" :	
+					{
+						"addInfo" : 0,
+						"subtype" : "spell.mirth",
+						"type" : "SPECIAL_PECULIAR_ENCHANT"
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Ogma is master of the rune of inspiration. Musician and storyteller Ogma would be a conventional bard if he had not given up worldly amenities to devote himself exclusively to life in the most beautiful and remote corners of the forest.",
+			"name" : "Ogma",
+			"specialty" : {
+				"description" : "Morale bonus and enchants units with morale. Start with sorrow.",
+				"name" : "Inspiration Rune",
+				"tooltip" : "Morale bonus and enchants units with morale. Start with sorrow."
+			}
+		}
+	}
+}

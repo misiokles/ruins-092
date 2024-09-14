@@ -1,0 +1,56 @@
+{
+	"rn092_thar" : {
+		"army" : [
+			{ "creature" : "rn092_stag", "max" : 13, "min" : 9 }
+		],
+		"class" : "guardian_092",
+		"images" : {
+			"large" : "ruins092/heroes/thar/large.png",
+			"small" : "ruins092/heroes/thar/small.png",
+			"specialtyLarge" : "ruins092/heroes/thar/slarge.png",
+			"specialtySmall" : "ruins092/heroes/thar/ssmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "leadership" },
+			{ "level" : "basic", "skill" : "earthMagic" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"ore" :
+					{
+						"subtype" : "resource.ore",
+						"type" : "GENERATE_RESOURCE",
+						"val" : 2,
+						"valueType" : "BASE_NUMBER"
+					},
+				"stoneGolem" :
+					{
+						"limiters" : [ { "parameters" : [ "stoneGolem", true ], "type" : "CREATURE_TYPE_LIMITER" } ],
+						"type" : "STACKS_SPEED",
+						"val" : 1
+					},
+				"diamondGolem" :
+					{
+						"limiters" : [ { "parameters" : [ "diamondGolem", false ], "type" : "CREATURE_TYPE_LIMITER" } ],
+						"type" : "STACKS_SPEED",
+						"val" : 1
+					},
+				"livingStone" :
+					{
+						"limiters" : [ { "parameters" : [ "rn092_livingStone", true ], "type" : "CREATURE_TYPE_LIMITER" } ],
+						"type" : "STACKS_SPEED",
+						"val" : 1
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Thar is a cowardly stone golem that one day was part of the walls of the ruins, but that preferred not to leave for the fight when the opportunity arose. Instead he urged his stone companions to feed the fervor of battle from a distance.",
+			"name" : "Thar",
+			"specialty" : {
+				"description" : "{Rocks}\r\nGenerates 2 ore/day. Increases Speed of any rock golens by 1.",
+				"name" : "Rocks",
+				"tooltip" : "Generates 2 ore/day. Increases Speed of any rock golens by 1."
+			}
+		}
+	}
+}

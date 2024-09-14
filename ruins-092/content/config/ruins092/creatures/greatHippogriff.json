@@ -1,0 +1,86 @@
+{
+	"rn092_greatHippogriff" : 
+	{
+		"name" :
+		{
+			"singular" : "Great Hippogriff",
+			"plural" : "Great Hippogriffins"
+		},
+		"upgrades":
+		[
+			"rn092_hippogriff"
+		],
+		"level" : 6,
+		"special" : false,
+		"faction" : "ruins_092", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 0,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 1150
+		},
+		"fightValue" : 1600,
+		"aiValue" : 1854,
+		"growth" : 2,
+		
+		"attack" : 15,
+		"defense" : 14,
+		"hitPoints" : 90,
+		"shots" : 0,
+		"speed" : 10,
+		"damage" :
+		{
+			"min" : 16,
+			"max" : 23
+		},
+		"spellPoints" : 0,
+		"advMapAmount" :
+		{
+			"min" : 5,
+			"max" : 10
+		},
+		"doubleWide" : true,
+		"abilities" : {
+			"flying" : {
+				"type": "FLYING"
+			},
+			"magicMirror":{ 
+				"type" : "MAGIC_MIRROR",
+				"val" : 20
+			},
+			"haste" :
+			{
+				"type" : "SPELL_BEFORE_ATTACK",
+				"subtype" : "spell.haste",
+				"val" : 20
+			}
+		},
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "ruins092/creatures/greatHippogriff/battle.def",
+			"map" : "ruins092/creatures/greatHippogriff/adventure.def",
+			"iconSmall" : "ruins092/creatures/greatHippogriff/small.png",
+			"iconLarge" : "ruins092/creatures/greatHippogriff/large.png",
+			"timeBetweenFidgets" : 1.00,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 22.00,
+				"attack" : 1.00
+			}
+		},
+		"sound" :
+		{
+			"attack": "RGRFATTK.wav",
+			"defend": "RGRFDFND.wav",
+			"killed": "RGRFKILL.wav",
+			"move": "RGRFMOVE.wav",
+			"wince": "RGRFWNCE.wav"
+		}
+	}
+}

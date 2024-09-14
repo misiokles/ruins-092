@@ -1,0 +1,31 @@
+{
+	"rn092_olun" : {
+		"army" : [
+			{ "creature" : "rn092_hermit", "max" : 3, "min" : 2 }
+		],
+		"class" : "hermit_092",
+		"images" : {
+			"large" : "ruins092/heroes/olun/large.png",
+			"small" : "ruins092/heroes/olun/small.png",
+			"specialtyLarge" : "ruins092/heroes/olun/slarge.png",
+			"specialtySmall" : "ruins092/heroes/olun/ssmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "intelligence" },
+			{ "level" : "basic", "skill" : "resistance" }
+		],
+
+		"specialty" : {
+			"creature" : "rn092_solitary"
+		},
+		"texts" : {
+			"biography" : "Away from everything and everyone is the perfect world for Olun, but as long as there is war nearby your cave will not be hidden enough for your wish to come true.",
+			"name" : "Olun",
+			"specialty" : {
+				"description" : "Increases Speed of any Solitaries or Hermits by 1 and their Attack and Defense skills by 5% for every 5 levels.",
+				"name" : "Solitary",
+				"tooltip" : "Increases Speed of any Solitaries or Hermits by 1 and their Attack and Defense skills by 5% for every 5 levels."
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+ {
+	"rn092_ehecat" : {
+		"army" : [
+			{ "creature" : "rn092_birdStalker", "max" : 10, "min" : 5 },
+			{ "creature" : "rn092_birdStalker", "max" : 6, "min" : 3 },
+			{ "creature" : "rn092_birdStalker", "max" : 5, "min" : 2 }
+		],
+		"class" : "guardian_092",
+		"images" : {
+			"large" : "ruins092/heroes/ehecat/large.bmp",
+			"small" : "ruins092/heroes/ehecat/small.bmp",
+			"specialtyLarge" : "ruins092/heroes/ehecat/slarge.bmp",
+			"specialtySmall" : "ruins092/heroes/ehecat/ssmall.bmp"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "leadership" },
+			{ "level" : "basic", "skill" : "scouting" }
+		],
+
+		"specialty" : {
+			"creature" : "rn092_birdStalker"
+		},
+		"texts" : {
+			"biography" : "The position of watchman assured Ehecat knowledge about the importance of the paradise where the bird people live. Hard to imagine leadership in a chaotic people, but in the midst of so much chaos a little knowledge is enough.",
+			"name" : "Ehecat",
+			"specialty" : {
+				"description" : "Increases attack, defense and damage of any Bird Hunters by 1 every 2 levels.",
+				"name" : "Bird Stalker",
+				"tooltip" : "Increases attack, defense and damage of any Bird Hunters by 1 every 2 levels."
+			}
+		}
+	}
+}

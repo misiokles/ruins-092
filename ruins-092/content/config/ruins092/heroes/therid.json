@@ -1,0 +1,32 @@
+ {
+	"rn092_therid" : {
+		"army" : [
+			{ "creature" : "rn092_pygmy", "max" : 15, "min" : 10 },
+			{ "creature" : "rn092_giantSpider", "max" : 1, "min" : 1 },
+			{ "creature" : "rn092_giantSpider", "max" : 1, "min" : 1 }
+		],
+		"class" : "guardian_092",
+		"images" : {
+			"large" : "ruins092/heroes/therid/large.png",
+			"small" : "ruins092/heroes/therid/small.png",
+			"specialtyLarge" : "ruins092/heroes/therid/slarge.png",
+			"specialtySmall" : "ruins092/heroes/therid/ssmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "tactics" },
+			{ "level" : "basic", "skill" : "necromancy" }
+		],
+		"specialty" : {
+			"creature" : "rn092_giantSpider"
+		},
+		"texts" : {
+			"biography" : "The position of nobility never pleased Therid. On the eve of an arranged marriage she fled the kingdom and found himself in the dark arts. Today your fellows are the fearsome creatures of the dark.",
+			"name" : "Therid",
+			"specialty" : {
+				"description" : "Increases attack, defense and damage of any Giant Spider by 1 every 5 levels.",
+				"name" : "Black Widow",
+				"tooltip" : "Increases attack, defense and damage of any Giant Spider by 1 every 5 levels."
+			}
+		}
+	}
+}

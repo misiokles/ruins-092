@@ -1,0 +1,45 @@
+{
+	"rn092_oghan" : {
+		"army" : [
+			{ "creature" : "dendroidGuard", "max" : 5, "min" : 3 },
+			{ "creature" : "dendroidGuard", "max" : 2, "min" : 1 }
+		],
+		"class" : "guardian_092",
+		"images" : {
+			"large" : "ruins092/heroes/oghan/large.png",
+			"small" : "ruins092/heroes/oghan/small.png",
+			"specialtyLarge" : "ruins092/heroes/oghan/slarge.png",
+			"specialtySmall" : "ruins092/heroes/oghan/ssmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "earthMagic" },
+			{ "level" : "basic", "skill" : "offence" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"wood" :	
+					{
+						"subtype" : "resource.wood",
+						"type" : "GENERATE_RESOURCE",
+						"val" : 2,
+						"valueType" : "BASE_NUMBER"
+					},
+				"speed" :
+					{
+						"limiters" : [ { "parameters" : [ "dendroidGuard", true ], "type" : "CREATURE_TYPE_LIMITER" } ],
+						"type" : "STACKS_SPEED",
+						"val" : 1
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Wood in the strength of the palisades. Wood on axes cape. Wood in the resistance of the shields. Wood on the ballista arrows. Wood on the aim of catapults. The wood before it suffered, now it beats back.",
+			"name" : "Oghan",
+			"specialty" : {
+				"description" : "Generates 2 wood/day. Increases Speed of any living wood creature by 1.",
+				"name" : "Wood",
+				"tooltip" : "Generates 2 wood/day. Increases Speed of any living wood creature by 1"
+			}
+		}
+	}
+}

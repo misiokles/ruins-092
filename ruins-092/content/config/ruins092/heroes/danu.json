@@ -1,0 +1,38 @@
+{
+	"rn092_danu" : {
+		"army" : [
+			{ "creature" : "rn092_pygmy", "max" : 20, "min" : 13 },
+			{ "creature" : "rn092_stag", "max" : 7, "min" : 2 }
+		],
+		"class" : "runemaster_092",
+		"spellbook" : [ "bless" ],
+		"images" : {
+			"large" : "ruins092/heroes/danu/large.bmp",
+			"small" : "ruins092/heroes/danu/small.bmp",
+			"specialtyLarge" : "ruins092/heroes/danu/slarge.bmp",
+			"specialtySmall" : "ruins092/heroes/danu/ssmall.bmp"
+		},
+		"skills" : [
+			{ "level" : "advanced", "skill" : "waterMagic" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"mana" :
+					{
+						"val" : 3,
+						"type" : "MANA_REGENERATION",
+						"valueType" : "BASE_NUMBER"
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Danu is master of the mana rune. Born the banks of a sacred river, it was initiated in the ritualistic arts of the water goddess. It preaches about the purity of the element and the renewal it provides.",
+			"name" : "Danu",
+			"specialty" : {
+				"description" : "Regenerates 3 mana point/day",
+				"name" : "Mana Rune",
+				"tooltip" : "Regenerates 3 mana point/day. Besides start with Bless."
+			}
+		}
+	}
+}

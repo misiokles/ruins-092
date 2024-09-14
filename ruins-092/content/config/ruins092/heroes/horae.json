@@ -1,0 +1,38 @@
+{
+	"rn092_horae" : {
+		"army" : [
+			{ "creature" : "rn092_solitary", "max" : 8, "min" : 5 }
+		],
+		"class" : "hermit_092",
+		"spellbook" : [ "earthquake" ],
+		"images" : {
+			"large" : "ruins092/heroes/horae/large.bmp",
+			"small" : "ruins092/heroes/horae/small.bmp",
+			"specialtyLarge" : "ruins092/heroes/horae/slarge.bmp",
+			"specialtySmall" : "ruins092/heroes/horae/ssmall.bmp"
+		},
+		"skills" : [
+			{ "level" : "advanced", "skill" : "earthMagic" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"maxedSpell" :
+					{
+						"type" : "SPELL",
+						"subtype" : "spell.earthquake",
+						"val" : 3,
+						"valueType" : "INDEPENDENT_MAX"
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Horae is a fanatic druid who does not believe in unnatural buildings. If we come from the land, there is no reason to create barriers between us.",
+			"name" : "Horae",
+			"specialty" : {
+				"description" : "Maxed earthquake spell.",
+				"name" : "Earthquake",
+				"tooltip" : "Maxed earthquake spell. Starts with earthquake."
+			}
+		}
+	}
+}

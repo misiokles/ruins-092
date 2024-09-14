@@ -1,0 +1,31 @@
+{
+	"rn092_peryt" : {
+		"army" : [
+			{ "creature" : "rn092_stag", "max" : 10, "min" : 5 },
+			{ "creature" : "rn092_highStag", "max" : 5, "min" : 2 }
+		],
+		"class" : "guardian_092",
+		"images" : {
+			"large" : "ruins092/heroes/peryt/large.png",
+			"small" : "ruins092/heroes/peryt/small.png",
+			"specialtyLarge" : "ruins092/heroes/peryt/slarge.png",
+			"specialtySmall" : "ruins092/heroes/peryt/ssmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "pathfinding" },
+			{ "level" : "basic", "skill" : "firstAid" }
+		],
+		"specialty" : {
+			"creature" : "rn092_stag"
+		},
+		"texts" : {
+			"biography" : "In the form of a warrior with deer's head and glittering wings, Peryt is venerated as the embodiment of a protective spirit and commands the forest animals against invaders. Though imposing, his wings no longer allow him to fly because of a combat injury decades ago.",
+			"name" : "Peryt",
+			"specialty" : {
+				"description" : "Increases Speed of any Stags by 1 and their Attack and Defense skills by 5% for every 3 levels.",
+				"name" : "Stag Spirit",
+				"tooltip" : "Increases Speed of any Stags by 1 and their Attack and Defense skills by 5% for every 3 levels."
+			}
+		}
+	}
+}

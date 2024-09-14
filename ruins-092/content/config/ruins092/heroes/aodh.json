@@ -1,0 +1,40 @@
+{
+	"rn092_aodh" : {
+		"army" : [
+			{ "creature" : "rn092_pygmy", "max" : 15, "min" : 10 },
+			{ "creature" : "rn092_pygmy", "max" : 10, "min" : 5 },
+			{ "creature" : "rn092_pygmy", "max" : 10, "min" : 5 },
+		],
+		"class" : "runemaster_092",
+		"spellbook" : [ "sacrifice" ],
+		"images" : {
+			"large" : "ruins092/heroes/aodh/large.bmp",
+			"small" : "ruins092/heroes/aodh/small.bmp",
+			"specialtyLarge" : "ruins092/heroes/aodh/slarge.bmp",
+			"specialtySmall" : "ruins092/heroes/aodh/ssmall.bmp"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "firstAid" },
+			{ "level" : "basic", "skill" : "fireMagic" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"health" :
+					{
+						"type" : "STACK_HEALTH",
+						"val" : 2,
+						"valueType" : "ADDITIVE_VALUE"
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Aodh is master of the blood rune. Aodh saw closely the destruction that the war caused to those who were close to him. Grudge and fear gave way to the knowledge and strategy of survival and revenge.",
+			"name" : "Aodh",
+			"specialty" : {
+				"description" : "Creatures have 2 bonus life.",
+				"name" : "Blood Rune",
+				"tooltip" : "Creatures have 2 bonus life. Start with Sacrifice."
+			}
+		}
+	}
+}

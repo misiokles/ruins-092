@@ -1,0 +1,98 @@
+	{
+	"rn092_solitary" : 
+	{
+		"name" :
+		{
+			"singular" : "Solitary",
+			"plural" : "Solitaries"
+		},
+		"upgrades":
+		[
+			"rn092_hermit"
+		],
+		"level" : 4,
+		"special" : false,
+		"faction" : "ruins_092", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 0,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 350
+		},
+		"fightValue" : 558,
+		"aiValue" : 573,
+		"growth" : 4,
+		
+		"attack" : 9,
+		"defense" : 7,
+		"hitPoints" : 27,
+		"shots" : 20,
+		"speed" : 5,
+		"damage" :
+		{
+			"min" : 7,
+			"max" : 10
+		},
+		"spellPoints" : 50,
+		"advMapAmount" :
+		{
+			"min" : 10,
+			"max" : 20
+		},
+		"doubleWide" : false,
+		"abilities" : {
+			"shooter": {
+				"type":"SHOOTER"
+			},
+			"fighter": {
+				"type": "NO_MELEE_PENALTY"
+			},
+			"magic": {
+				"type": "MAGIC_MIRROR",
+				"val": 10
+			}
+		},
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "ruins092/creatures/solitary/battle.def",
+			"map" : "ruins092/creatures/solitary/adventure.def",
+			"iconSmall" : "ruins092/creatures/solitary/small.png",
+			"iconLarge" : "ruins092/creatures/solitary/large.png",
+			"timeBetweenFidgets" : 1.00,
+			"animationTime" :
+			{
+				"walk" : 1.10,
+				"idle" : 23.00,
+				"attack" : 1.20
+			},
+			"missile" :
+			{
+				"projectile": "ruins092/creatures/solitary/missile.def",
+				"attackClimaxFrame" : 8,
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ],
+				"offset" : {
+					"lowerX" : 28,
+					"lowerY" : 3,
+					"middleX" : 62,
+					"middleY" : -53,
+					"upperX" : 37,
+					"upperY" : -98
+				}
+			}
+		},
+		"sound" :
+		{
+			"attack": "OGREATTK.wav",
+			"defend": "OGREDFND.wav",
+			"killed": "OGREKILL.wav",
+			"move": "OGREMOVE.wav",
+			"shoot": "MONKSHOT.wav",
+			"wince": "OGREWNCE.wav"
+		}
+	}
+}

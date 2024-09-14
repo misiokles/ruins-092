@@ -1,0 +1,31 @@
+{
+	"rn092_wuor" : {
+		"army" : [
+			{ "creature" : "rn092_pygmy", "max" : 21, "min" : 17 },
+			{ "creature" : "rn092_pygmyWarrior", "max" : 13, "min" : 5 }
+		],
+		"class" : "guardian_092",
+		"images" : {
+			"large" : "ruins092/heroes/wuor/large.bmp",
+			"small" : "ruins092/heroes/wuor/small.bmp",
+			"specialtyLarge" : "ruins092/heroes/wuor/slarge.bmp",
+			"specialtySmall" : "ruins092/heroes/wuor/ssmall.bmp"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "offence" },
+			{ "level" : "basic", "skill" : "leadership" }
+		],
+		"specialty" : {
+			"creature" : "rn092_pygmy"
+		},
+		"texts" : {
+			"biography" : "In a tribe of Pygmies or you inherit the leadership or you take. Wuor was not born to be a leader, but he was born good in a fight. 'Boss' and 'fighter' in the language of the Pygmies is the same word.",
+			"name" : "Wuor",
+			"specialty" : {
+				"description" : "Increases Speed of any Living Stones and Living Ruins by 1 and their Attack and Defense skills by 5% for every 1 level.",
+				"name" : "Pygmy Chief",
+				"tooltip" : "Increases Speed of any Living Stones and Living Ruins by 1 and their Attack and Defense skills by 5% for every 1 level."
+			}
+		}
+	}
+}

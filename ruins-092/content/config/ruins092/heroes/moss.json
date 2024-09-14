@@ -1,0 +1,50 @@
+{
+	"rn092_moss" : {
+		"army" : [
+			{ "creature" : "rn092_pygmy", "max" : 15, "min" : 10 }
+		],
+		"class" : "hermit_092",
+		"spellbook" : [ "slow","quicksand" ],
+		"images" : {
+			"large" : "ruins092/heroes/moss/large.png",
+			"small" : "ruins092/heroes/moss/small.png",
+			"specialtyLarge" : "ruins092/heroes/moss/slarge.png",
+			"specialtySmall" : "ruins092/heroes/moss/ssmall.png"
+		},
+		"skills" : [
+			{ "level" : "advanced", "skill" : "earthMagic" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"quicksand1" :
+					{
+						"type" : "SPELL",
+						"subtype" : "spell.quicksand",
+						"val" : 3
+					},
+				"quicksand2" :
+					{
+						"type" : "SPELL",
+						"subtype" : "spell.quicksand",
+						"val" : 3,
+						"valueType" : "INDEPENDENT_MAX"
+					},
+				"speed" :
+					{
+						"type" : "STACKS_SPEED",
+						"val":-1,
+						"propagator" : "BATTLE_WIDE"
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Moss is a priestess of the people of the trees who does not conform to the haste of other peoples. The rush of civilizations, the explosive advances. Everything has its time and the time of the trees is a little slower.",
+			"name" : "Moss",
+			"specialty" : {
+				"description" : "Maxed Quicksand spell. -1 speed to all units on battle.",
+				"name" : "Stay There",
+				"tooltip" : "Maxed Quicksand spell. Starts with Quicksand and Slow. -1 speed to all units on battle."
+			}
+		}
+	}
+}

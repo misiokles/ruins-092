@@ -1,0 +1,53 @@
+{
+	"rn092_leshy" : {
+		"army" : [
+			{ "creature" : "rn092_darkStag", "max" : 10, "min" : 5 }
+		],
+		"class" : "hermit_092",
+		"spellbook" : [ "deathRipple" ],
+		"images" : {
+			"large" : "ruins092/heroes/leshy/large.bmp",
+			"small" : "ruins092/heroes/leshy/small.bmp",
+			"specialtyLarge" : "ruins092/heroes/leshy/slarge.bmp",
+			"specialtySmall" : "ruins092/heroes/leshy/ssmall.bmp"
+		},
+		"skills" : [
+			{ "level" : "advanced", "skill" : "mysticism" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"bonus1" :
+					{
+						"type" : "SPELL",
+						"subtype" : "spell.deathRipple",
+						"val" : 1
+					},
+				"bonus2" :
+					{
+						"limiters" : [ { "parameters" : [ "rn092_birdStalker", true ], "type" : "CREATURE_TYPE_LIMITER" } ],
+						"subtype" : "spell.deathRipple",
+						"type" : "SPELL_IMMUNITY",
+						"val" : 1,
+						"valueType" : "BASE_NUMBER"
+					},
+				"bonus3" :
+					{
+						"limiters" : [ { "parameters" : [ "rn092_stag", true ], "type" : "CREATURE_TYPE_LIMITER" } ],
+						"subtype" : "spell.deathRipple",
+						"type" : "SPELL_IMMUNITY",
+						"val" : 1,
+						"valueType" : "BASE_NUMBER"
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Leshy is a defending druid of forest creatures who believes in protection through the spread of death.",
+			"name" : "Leshy",
+			"specialty" : {
+				"description" : "Player allied Bird Stalker and Stags are immune to Death Ripple.",
+				"name" : "Death",
+				"tooltip" : "Player allied Bird Stalker and Stags are immune to Death Ripple. Starts with Death Ripple."
+			}
+		}
+	}
+}

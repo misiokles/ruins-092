@@ -1,0 +1,84 @@
+{
+	"hermit_092" :
+	{
+		"animation" : {
+			"battle" : 
+			{
+				"female" : "ruins092/classes/hermit/female.def",
+				"male"   : "ruins092/classes/hermit/male.def"
+			}
+		},
+		"mapObject" : {
+			"templates" : {
+				"default" : { 
+					"animation" : "ruins092/classes/hermit/adventure.def",
+					"editorAnimation": "ruins092/classes/hermit/editor.def" 
+				}
+			}
+		},
+		"name" : "Hermit",
+		"faction" : "ruins_092",
+		"commander" : "rn092_hermit",
+		"affinity" : "magic",
+		"primarySkills" :
+		{
+			"attack"     : 0,
+			"defence"    : 1,
+			"spellpower" : 1,
+			"knowledge"  : 3
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 15,
+			"defence"    : 25,
+			"spellpower" : 35,
+			"knowledge"  : 25
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 20,
+			"defence"    : 20,
+			"spellpower" : 30,
+			"knowledge"  : 30
+		},
+		"secondarySkills" :
+		{
+			"airMagic" : 6,
+			"archery" : 2,
+			"armorer" : 4,
+			"eagleEye" : 3,
+			"earthMagic" : 8,
+			"fireMagic" : 5,
+			"intelligence" : 6,
+			"learning" : 7,
+			"logistics" : 5,
+			"luck" : 2,
+			"mysticism" : 5,
+			"navigation" : 1,
+			"offence" : 4,
+			"pathfinding" : 6,
+			"resistance" : 5,
+			"scholar" : 7,
+			"scouting" : 4,
+			"sorcery" : 8,
+			"tactics" : 2,
+			"waterMagic" : 7,
+			"wisdom" : 8,
+			"firstAid" : 5
+		},
+		"defaultTavern" : 4,
+		"tavern" :
+		{
+			"castle" : 3,
+			"conflux" : 2,
+			"dungeon" : 4,
+			"fortress" : 8,
+			"rampart" : 8,
+			"stronghold" : 4,
+			"ruins_092" : 9,
+			"necropolis" : 0,
+			"inferno" : 0,
+			"tower" : 0
+		}
+	}
+}

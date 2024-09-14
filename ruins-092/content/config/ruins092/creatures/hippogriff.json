@@ -1,0 +1,80 @@
+{
+	"rn092_hippogriff" : 
+	{
+		"name" :
+		{
+			"singular" : "Hippogriff",
+			"plural" : "Hippogriffins"
+		},
+		"upgrades":
+		[
+			"rn092_hippogriff"
+		],
+		"level" : 6,
+		"special" : false,
+		"faction" : "ruins_092", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 0,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 1150
+		},
+		"fightValue" : 1452,
+		"aiValue" : 1663,
+		"growth" : 2,
+		
+		"attack" : 15,
+		"defense" : 14,
+		"hitPoints" : 80,
+		"shots" : 0,
+		"speed" : 9,
+		"damage" :
+		{
+			"min" : 16,
+			"max" : 23
+		},
+		"spellPoints" : 0,
+		"advMapAmount" :
+		{
+			"min" : 5,
+			"max" : 12
+		},
+		"doubleWide" : true,
+		"abilities" : {
+			"flying" : {
+				"type": "FLYING"
+			},
+			"magicMirror":{ 
+				"type" : "MAGIC_MIRROR",
+				"val" : 10
+			}
+		},
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "ruins092/creatures/hippogriff/battle.def",
+			"map" : "ruins092/creatures/hippogriff/adventure.def",
+			"iconSmall" : "ruins092/creatures/hippogriff/small.png",
+			"iconLarge" : "ruins092/creatures/hippogriff/large.png",
+			"timeBetweenFidgets" : 0.80,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 22.00,
+				"attack" : 0.90
+			}
+		},
+		"sound" :
+		{
+			"attack": "GRIFATTK.wav",
+			"defend": "GRIFDFND.wav",
+			"killed": "GRIFKILL.wav",
+			"move": "GRIFMOVE.wav",
+			"wince": "GRIFWNCE.wav"
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"rn092_cerna" : {
+		"army" : [
+			{ "creature" : "rn092_darkStag", "max" : 10, "min" : 5 }
+		],
+		"class" : "runemaster_092",
+		"spellbook" : [ "cure" ],
+		"images" : {
+			"large" : "ruins092/heroes/cerna/large.bmp",
+			"small" : "ruins092/heroes/cerna/small.bmp",
+			"specialtyLarge" : "ruins092/heroes/cerna/slarge.bmp",
+			"specialtySmall" : "ruins092/heroes/cerna/ssmall.bmp"
+		},
+		"skills" : [
+			{ "level" : "advanced", "skill" : "firstAid" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"growth" :
+					{
+						"type" : "CREATURE_GROWTH_PERCENT",
+						"val" : 15,
+						"propagator": "PLAYER_PROPAGATOR"
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Cerna is master of the fertility rune. Strength and growth are ideas that go together. Cerna is an enthusiastic druid of great populations, of absolute dominion through quantity.",
+			"name" : "Ehecat",
+			"specialty" : {
+				"description" : "Have 15% increased weekly growth from base growth.",
+				"name" : "Fertility Rune",
+				"tooltip" : "Have 15% increased weekly growth from base growth."
+			}
+		}
+	}
+}

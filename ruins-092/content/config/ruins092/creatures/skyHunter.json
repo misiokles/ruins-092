@@ -1,0 +1,73 @@
+{
+	"rn092_skyHunter" : 
+	{
+		"name" :
+		{
+			"singular" : "Sky Hunter",
+			"plural" : "Sky Hunters"
+		},
+		"level" : 2,
+		"special" : false,
+		"faction" : "ruins_092", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 0,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 200
+		},
+		"fightValue" : 229,
+		"aiValue" : 222,
+		"growth" : 9,
+		
+		"attack" : 8,
+		"defense" : 5,
+		"hitPoints" : 15,
+		"shots" : 0,
+		"speed" : 9,
+		"damage" :
+		{
+			"min" : 2,
+			"max" : 5
+		},
+		"spellPoints" : 0,
+		"advMapAmount" :
+		{
+			"min" : 18,
+			"max" : 27
+		},
+		"doubleWide" : false,
+		"abilities" : {
+			"fly" : { 
+				"type" : "FLYING"
+			}
+		},
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "ruins092/creatures/skyHunter/battle.def",
+			"map" : "ruins092/creatures/skyHunter/adventure.def",
+			"iconSmall" : "ruins092/creatures/skyHunter/small.png",
+			"iconLarge" : "ruins092/creatures/skyHunter/large.png",
+			"timeBetweenFidgets" : 0.80,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 21.00,
+				"attack" : 1.30
+			}
+		},
+		"sound" :
+		{
+			"attack": "HHAGATTK.wav",
+			"defend": "HHAGDFND.wav",
+			"killed": "HHAGKILL.wav",
+			"move": "HHAGMOVE.wav",
+			"shoot": "HHAGSHOT.wav",
+			"wince": "HHAGWNCE.wav"
+		}
+	}
+}

@@ -1,0 +1,111 @@
+{
+	"rn092_hermit" : 
+	{
+		"name" :
+		{
+			"singular" : "Hermit",
+			"plural" : "Hermits"
+		},
+		"level" : 4,
+		"special" : false,
+		"faction" : "ruins_092", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 0,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 600
+		},
+		"fightValue" : 696,
+		"aiValue" : 727,
+		"growth" : 4,
+		
+		"attack" : 11,
+		"defense" : 8,
+		"hitPoints" : 32,
+		"shots" : 20,
+		"speed" : 6,
+		"damage" :
+		{
+			"min" : 8,
+			"max" : 11
+		},
+		"spellPoints" : 50,
+		"advMapAmount" :
+		{
+			"min" : 11,
+			"max" : 17
+		},
+		"doubleWide" : false,
+		"abilities" : {
+			"shooter": {
+				"type":"SHOOTER"
+			},
+			"magic": {
+				"type": "MAGIC_MIRROR",
+				"val": 20
+			},
+			"fighter": {
+				"type": "NO_MELEE_PENALTY"
+			},
+			"summons50HP" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.summonDendroids",
+				"val" : 20
+			},
+			"resurrects" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.summonDendroids",
+				"val" : 0
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			}
+		},
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "ruins092/creatures/hermit/battle.def",
+			"map" : "ruins092/creatures/hermit/adventure.def",
+			"iconSmall" : "ruins092/creatures/hermit/small.png",
+			"iconLarge" : "ruins092/creatures/hermit/large.png",
+			"timeBetweenFidgets" : 1.00,
+			"animationTime" :
+			{
+				"walk" : 1.10,
+				"idle" : 15.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile": "ruins092/creatures/hermit/missile.def",
+				"attackClimaxFrame" : 5,
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ],
+				"offset" : {
+					"lowerX" : 28,
+					"lowerY" : 3,
+					"middleX" : 62,
+					"middleY" : -53,
+					"upperX" : 37,
+					"upperY" : -98
+				}
+			}
+		},
+		"sound" :
+		{
+			"attack": "OGRMATTK.wav",
+			"defend": "OGRMDFND.wav",
+			"killed": "OGRMKILL.wav",
+			"move": "OGRMMOVE.wav",
+			"shoot": "OGRMSHOT.wav",
+			"wince": "OGRMWNCE.wav"
+		}
+	}
+}

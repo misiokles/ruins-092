@@ -1,0 +1,55 @@
+{
+	"rn092_inti" : {
+		"army" : [
+			{ "creature" : "rn092_pygmy", "max" : 17, "min" : 10 },
+			{ "creature" : "rn092_highStag", "max" : 7, "min" : 5 }
+		],
+		"class" : "runemaster_092",
+		"spellbook" : [ "forgetfulness" ],
+		"images" : {
+			"large" : "ruins092/heroes/inti/large.bmp",
+			"small" : "ruins092/heroes/inti/small.bmp",
+			"specialtyLarge" : "ruins092/heroes/inti/slarge.bmp",
+			"specialtySmall" : "ruins092/heroes/inti/ssmall.bmp"
+		},
+		"skills" : [
+			{ "level" : "advanced", "skill" : "scholar" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"bonus1" :
+					{
+						"type" : "NONEVIL_ALIGNMENT_MIX"
+					},
+				"bonus2" :
+					{
+						"type" : "LUCK",
+						"val" : 0,
+						"valueType" : "INDEPENDENT_MIN",
+						"propagator": "BATTLE_WIDE"
+					},
+				"bonus3" :
+					{
+						"type" : "MORALE",
+						"val" : 0,
+						"valueType" : "INDEPENDENT_MIN",
+						"propagator": "BATTLE_WIDE"
+					},
+				"bonus4": 
+					{
+						"type" : "NEGATE_ALL_NATURAL_IMMUNITIES",
+						"subtype" : "immunityBattleWide"
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Master of the rune of equality, Inti is a priestess and passionate scholar of civilizations. What intrigues him most are the peculiarities of a people that unbalance the powers of an era. As far as possible she tries to balance this nature cheating.",
+			"name" : "Inti",
+			"specialty" : {
+				"description" : "Negates morale, luck and all immunities. Permits mixed army.",
+				"name" : "Equality Rune",
+				"tooltip" : "Negates morale, luck and all immunities. Permits mixed army. Starts with Forgetfulness"
+			}
+		}
+	}
+}

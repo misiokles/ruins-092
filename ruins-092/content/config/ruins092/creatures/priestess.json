@@ -1,0 +1,104 @@
+{
+	"rn092_priestess" : 
+	{
+		"name" :
+		{
+			"singular" : "Priestess",
+			"plural" : "Priestesses"
+		},
+		"upgrades":
+		[
+			"rn092_highPriestess"
+		],
+		"level" : 6,
+		"special" : false,
+		"faction" : "ruins_092", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 0,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 350
+		},
+		"fightValue" : 558,
+		"aiValue" : 573,
+		"growth" : 2,
+		
+		"attack" : 15,
+		"defense" : 12,
+		"hitPoints" : 65,
+		"shots" : 25,
+		"speed" : 7,
+		"damage" :
+		{
+			"min" : 15,
+			"max" : 20
+		},
+		"spellPoints" : 50,
+		"advMapAmount" :
+		{
+			"min" : 7,
+			"max" : 15
+		},
+		"doubleWide" : false,
+		"abilities" : {
+			"shooter": {
+				"type":"SHOOTER"
+			},
+			"spellPower" : {
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 2
+			},
+			"spellPoints" : {
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"spellcaster":{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.prayer",
+				"val" : 2
+			},
+		},
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "ruins092/creatures/priestess/battle.def",
+			"map" : "ruins092/creatures/priestess/adventure.def",
+			"iconSmall" : "ruins092/creatures/priestess/small.png",
+			"iconLarge" : "ruins092/creatures/priestess/large.png",
+			"timeBetweenFidgets" : 1.10,
+			"animationTime" :
+			{
+				"walk" : 1.40,
+				"idle" : 13.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile": "ruins092/projectiles/green.def",
+				"attackClimaxFrame" : 8,
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ],
+				"offset" : {
+					"lowerX" : 0,
+					"lowerY" : 0,
+					"middleX" : 0,
+					"middleY" : 0,
+					"upperX" : 0,
+					"upperY" : 0
+				}
+			}
+		},
+		"sound" :
+		{
+			"attack": "MONKATTK.wav",
+			"defend": "MONKDFND.wav",
+			"killed": "MONKKILL.wav",
+			"move": "MONKMOVE.wav",
+			"shoot": "MONKSHOT.wav",
+			"wince": "MONKWNCE.wav"
+		}
+	}
+}

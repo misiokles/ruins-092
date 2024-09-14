@@ -1,0 +1,104 @@
+{
+	"rn092_livingRuin" : 
+	{
+		"name" :
+		{
+			"singular" : "Living Ruin",
+			"plural" : "Living Ruins"
+		},
+		"level" : 7,
+		"special" : false,
+		"faction" : "ruins_092", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 4,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 3000
+		},
+		"fightValue" : 4770,
+		"aiValue" : 6274,
+		"growth" : 1,
+		
+		"attack" : 18,
+		"defense" : 28,
+		"hitPoints" : 320,
+		"shots" : 0,
+		"speed" : 8,
+		"damage" :
+		{
+			"min" : 35,
+			"max" : 55
+		},
+		"spellPoints" : 0,
+		"advMapAmount" :
+		{
+			"min" : 4,
+			"max" : 8
+		},
+		"doubleWide" : false,
+		"abilities" : {
+			"regeneration" : { 
+				"type" : "HP_REGENERATION",
+				"val" : 100000
+			},
+			"immunity" : { 
+				"type" : "NEGATIVE_EFFECTS_IMMUNITY",
+				"subtype": "earth"
+			},
+			"qualepower" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.earthquake",
+				"val" : 100
+			},
+			"earthquake" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.earthquake",
+				"val" : 3
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"magicResistance" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "any",
+				"val" : 20
+			},
+			"nonliving" :
+			{
+				"type" : "NON_LIVING"
+			}
+		},
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "ruins092/creatures/livingRuin/battle.def",
+			"map" : "ruins092/creatures/livingRuin/adventure.def",
+			"iconSmall" : "ruins092/creatures/livingRuin/small.png",
+			"iconLarge" : "ruins092/creatures/livingRuin/large.png",
+			"timeBetweenFidgets" : 1.00,
+			"animationTime" :
+			{
+				"walk" : 0.90,
+				"idle" : 15.00,
+				"attack" : 0.90
+			}
+		},
+		"sound" :
+		{
+			"attack": "SGLMATTK.wav",
+			"defend": "SGLMDFND.wav",
+			"killed": "SGLMKILL.wav",
+			"move": "SGLMMOVE.wav",
+			"wince": "SGLMWNCE.wav"
+		}
+	}
+}

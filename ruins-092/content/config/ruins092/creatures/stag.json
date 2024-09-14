@@ -1,0 +1,76 @@
+{
+	"rn092_stag" : 
+	{
+		"name" :
+		{
+			"singular" : "Stag",
+			"plural" : "Stags"
+		},
+		"upgrades":
+		[
+			"rn092_highStag"
+		],
+		"level" : 3,
+		"special" : false,
+		"faction" : "ruins_092", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 0,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 180
+		},
+		"fightValue" : 242,
+		"aiValue" : 238,
+		"growth" : 7,
+		
+		"attack" : 7,
+		"defense" : 7,
+		"hitPoints" : 18,
+		"shots" : 0,
+		"speed" : 6,
+		"damage" :
+		{
+			"min" : 2,
+			"max" : 5
+		},
+		"spellPoints" : 0,
+		"advMapAmount" :
+		{
+			"min" : 12,
+			"max" : 25
+		},
+		"doubleWide" : true,
+		"abilities" : {
+			"engage" : { 
+				"type" : "CHARGE_IMMUNITY"
+			},
+		},
+		"hasDoubleWeek": true,
+		"graphics" :
+		{
+			"animation" : "ruins092/creatures/stag/battle.def",
+			"map" : "ruins092/creatures/stag/adventure.def",
+			"iconSmall" : "ruins092/creatures/stag/small.png",
+			"iconLarge" : "ruins092/creatures/stag/large.png",
+			"timeBetweenFidgets" : 0.90,
+			"animationTime" :
+			{
+				"walk" : 1.10,
+				"idle" : 21.00,
+				"attack" : 1.30
+			}
+		},
+		"sound" :
+		{
+			"attack": "UNICATTK.wav",
+			"defend": "UNICDFND.wav",
+			"killed": "UNICKILL.wav",
+			"move": "UNICMOVE.wav",
+			"wince": "UNICWNCE.wav"
+		}
+	}
+}

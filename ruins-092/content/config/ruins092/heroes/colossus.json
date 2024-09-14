@@ -1,0 +1,33 @@
+{
+	"rn092_colossus" : {
+		"army" : [
+			{ "creature" : "stoneGolem", "max" : 5, "min" : 2 },
+			{ "creature" : "stoneGolem", "max" : 4, "min" : 1 },
+			{ "creature" : "stoneGolem", "max" : 3, "min" : 1 }
+		],
+		"class" : "guardian_092",
+		"images" : {
+			"large" : "ruins092/heroes/colossus/large.bmp",
+			"small" : "ruins092/heroes/colossus/small.bmp",
+			"specialtyLarge" : "ruins092/heroes/colossus/slarge.bmp",
+			"specialtySmall" : "ruins092/heroes/colossus/ssmall.bmp"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "armorer" },
+			{ "level" : "basic", "skill" : "resistance" }
+		],
+
+		"specialty" : {
+			"creature" : "rn092_livingStone"
+		},
+		"texts" : {
+			"biography" : "For hundreds of years Colossus contented himself with merely watching the bandits desecrate the riches of the ruins, until one day he got tired and decided that it was time for the mountain of stones to take back what was taken.",
+			"name" : "Colossus",
+			"specialty" : {
+				"description" : "Increases Speed of any Living Stones and Living Ruins by 1 and their Attack and Defense skills by 5% for every 7 levels.",
+				"name" : "Living Stones",
+				"tooltip" : "Increases Speed of any Living Stones and Living Ruins by 2 and their Attack and Defense skills by 5% for every 7 levels."
+			}
+		}
+	}
+}

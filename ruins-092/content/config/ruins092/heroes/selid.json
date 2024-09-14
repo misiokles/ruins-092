@@ -1,0 +1,32 @@
+ {
+	"rn092_selid" : {
+		"army" : [
+			{ "creature" : "griffin", "max" : 4, "min" : 2 },
+			{ "creature" : "griffin", "max" : 2, "min" : 1 }
+		],
+		"class" : "guardian_092",
+		"images" : {
+			"large" : "ruins092/heroes/selid/large.png",
+			"small" : "ruins092/heroes/selid/small.png",
+			"specialtyLarge" : "ruins092/heroes/selid/slarge.png",
+			"specialtySmall" : "ruins092/heroes/selid/ssmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "leadership" },
+			{ "level" : "basic", "skill" : "eagleEye" }
+		],
+
+		"specialty" : {
+			"creature" : "rn092_hippogriff"
+		},
+		"texts" : {
+			"biography" : "The tribe of Selid was decimated when she was still very young. Frightened and unique survivor found shelter next to benevolent hippogriffos. She grew up in the ruins and became the guardian of her second family.",
+			"name" : "Selid",
+			"specialty" : {
+				"description" : "Increases attack, defense and damage of any Hippogriff and Griff by 1 every 6 levels.",
+				"name" : "Hippogriffins",
+				"tooltip" : "Increases attack, defense and damage of any Hippogriff by 1 every 6 levels."
+			}
+		}
+	}
+}

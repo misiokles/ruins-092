@@ -1,0 +1,85 @@
+{
+	"name" : "Ruins town",
+	"description" : "Ruins town\nVersion 0.9 - 2018/03/03\n\nMod done with much affection, enjoy. I await your feedback.\n\n More info at http://heroescommunity.com/viewthread.php3?TID=44951 or https://heroes3fico.tumblr.com/post/171459985427/ruins-town",
+	"author" : "Fiorin",
+	"contact" : "https://fior.in",
+	"version" : "0.92.1",
+	"modType" : "Town",
+	"compatibility" :
+	{
+		"min" : "1.5.0"
+	},	
+	"changelog" :
+	{
+		"0.92.1"   : [ "Update to vcmi-1.5 format" ],
+		"0.92.0"   : [ "Initial release" ]
+	},
+    "factions" : [
+		"config/ruins092/town/buildings.json",
+		"config/ruins092/town/faction.json",
+		"config/ruins092/town/siege.json",
+		"config/ruins092/town/spells.json",
+		"config/ruins092/town/structures.json",
+		"config/ruins092/town/puzzle.json"
+    ],
+	"creatures" :
+	[
+		"config/ruins092/creatures/pygmy.json",
+		"config/ruins092/creatures/pygmyWarrior.json",
+		"config/ruins092/creatures/birdStalker.json",
+		"config/ruins092/creatures/skyHunter.json",
+		"config/ruins092/creatures/stag.json",
+		"config/ruins092/creatures/highStag.json",
+		"config/ruins092/creatures/darkStag.json",
+		"config/ruins092/creatures/solitary.json",
+		"config/ruins092/creatures/hermit.json",
+		"config/ruins092/creatures/giantSpider.json",
+		"config/ruins092/creatures/ancientSpider.json",
+		"config/ruins092/creatures/hippogriff.json",
+		"config/ruins092/creatures/greatHippogriff.json",
+		"config/ruins092/creatures/priestess.json",
+		"config/ruins092/creatures/highPriestess.json",
+		"config/ruins092/creatures/livingStone.json",
+		"config/ruins092/creatures/livingRuin.json"
+	],
+	"heroClasses" :
+	[
+		"config/ruins092/classes/guardian.json",
+		"config/ruins092/classes/runemaster.json",
+		"config/ruins092/classes/hermit.json"
+	],
+
+	"heroes" :
+	[
+		"config/ruins092/heroes/peryt.json",
+		"config/ruins092/heroes/ehecat.json",
+		"config/ruins092/heroes/wuor.json",
+		"config/ruins092/heroes/therid.json",
+		"config/ruins092/heroes/selid.json",
+		"config/ruins092/heroes/colossus.json",
+		"config/ruins092/heroes/oghan.json",
+		"config/ruins092/heroes/thar.json",
+		"config/ruins092/heroes/aker.json",
+		"config/ruins092/heroes/aodh.json",
+		"config/ruins092/heroes/cerna.json",
+		"config/ruins092/heroes/danu.json",
+		"config/ruins092/heroes/lempo.json",
+		"config/ruins092/heroes/ogma.json",
+		"config/ruins092/heroes/tapio.json",
+		"config/ruins092/heroes/inti.json",
+		"config/ruins092/heroes/taloc.json",
+		"config/ruins092/heroes/strib.json",
+		"config/ruins092/heroes/kawa.json",
+		"config/ruins092/heroes/horae.json",
+		"config/ruins092/heroes/leshy.json",
+		"config/ruins092/heroes/moss.json",
+		"config/ruins092/heroes/huldra.json",
+		"config/ruins092/heroes/olun.json"
+	],
+	"objects" : [ 
+		"config/ruins092/dwellings"
+	],
+	"spells" : [ 
+		"config/ruins092/spells/summonDendroids.json"
+	]
+}

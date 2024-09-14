@@ -1,0 +1,378 @@
+{ 
+	"ruins_092" : {
+		"town" : {
+			"buildingsIcons": "ruins092/townhall.def",
+			"buildings" : {
+				"mageGuild1" : {
+					"cost" : { "gold" : 2000, "ore" : 5, "wood" : 5},
+					"description" : "Mage Guild will allow a visiting hero to learn the spells kept within.",
+					"id" : 0,
+					"name" : "Mage Guild Level 1",
+					"requires" : [
+						"allOf",["fort"]
+					],
+				},
+				"mageGuild2" : {
+					"cost" : { "gold" : 1000, "ore" : 5, "wood" : 5, "crystal": 4,"sulfur": 4, "mercury": 4, "gems": 4},
+					"description" : "Mage Guild will allow a visiting hero to learn the spells kept within.",
+					"id" : 1,
+					"name" : "Mage Guild Level 2",
+					"upgrades" : "mageGuild1"
+				},
+				"mageGuild3" : {
+					"cost" : { "gold" : 1000, "ore" : 5, "wood" : 5, "crystal": 6,"sulfur": 6, "mercury": 6, "gems": 6},
+					"description" : "Mage Guild will allow a visiting hero to learn the spells kept within.",
+					"id" : 2,
+					"name" : "Mage Guild Level 3",
+					"upgrades" : "mageGuild2"
+				},
+				"mageGuild4" : {
+					"cost" : { "gold" : 1000, "ore" : 5, "wood" : 5, "crystal": 8,"sulfur": 8, "mercury": 8, "gems": 8},
+					"description" : "Mage Guild will allow a visiting hero to learn the spells kept within.",
+					"id" : 3,
+					"name" : "Mage Guild Level 4",
+					"upgrades" : "mageGuild3"
+				},
+				"mageGuild5" : null,
+				"tavern" : {
+					"cost" : { "gold" : 500, "wood" : 5 },
+					"description" : "The Tavern allow recruiting heroes.",
+					"id" : 5,
+					"name" : "Tavern"
+				},
+				"shipyard" : {
+					"cost" : { "gold" : 2000, "ore" : 5, "wood" : 5, "crystal": 0,"sulfur": 0, "mercury": 0, "gems": 0},
+					"description" : "Ship Wreckage allow restore a boat near the ruins.",
+					"id" : 6,
+					"name" : "Wreckage"
+				},
+				"fort" : {
+					"cost" : { "gold" : 5000, "ore" : 20, "wood" : 20 },
+					"description" : "The Fort provides your ruins with defensive walls.",
+					"id" : 7,
+					"name" : "Fort"
+				},
+				"citadel" : {
+					"cost" : { "gold" : 2500, "ore" : 5 },
+					"description" : "Including a 50% increase to base creature growth, the Citadel adds a keep, and other terrain obstacles, to a ruins's defenses.",
+					"id" : 8,
+					"name" : "Citadel",
+					"upgrades" : "fort"
+				},
+				"castle" : {
+					"cost" : { "gold" : 5000, "ore" : 15, "wood" : 5 },
+					"description" : "The Castle adds two arrow towers, fortifies your ruin's defenses, and doubles base creature growth.",
+					"id" : 9,
+					"name" : "Castle",
+					"upgrades" : "citadel"
+				},
+				"villageHall" : {
+					"description" : "The Village Hall allows you to purchase town structures and earns your kingdom 500 gold per day.",
+					"id" : 10,
+					"mode" : "auto",
+					"name" : "Village Hall",
+					"produce": { "gold": 500 }
+				},
+				"townHall" : {
+					"cost" : { "gold" : 2500 },
+					"description" : "The Town Hall allows you to purchase town structures and earns your kingdom 1000 gold per day.",
+					"id" : 11,
+					"name" : "Town Hall",
+					"requires" : [ "tavern" ],
+					"upgrades" : "villageHall", 
+					"produce": { "gold": 1000 }
+				},
+				"cityHall" : {
+					"cost" : { "gold" : 5000 },
+					"description" : "The City Hall allows you to purchase town structures and earns your kingdom 2000 gold per day.",
+					"id" : 12,
+					"name" : "City Hall",
+					"requires" : [ "allOf", [ "mageGuild1" ], [ "blacksmith" ], [ "marketplace" ] ],
+					"upgrades" : "townHall",
+					"produce": { "gold": 2000 }
+				},
+				"capitol" : {
+					"cost" : { "gold" : 10000 },
+					"description" : "The Capitol earns your kingdom 4000 gold per day.",
+					"id" : 13,
+					"name" : "Capitol",
+					"requires" : [ "castle" ],
+					"upgrades" : "cityHall", 
+					"produce": { "gold": 4000 }
+				},
+				"marketplace" : {
+					"cost" : { "gold" : 500, "wood" : 5 },
+					"description" : "Merchant Cart, you can buy and sell resources.",
+					"id" : 14,
+					"name" : "Merchant Cart"
+				},
+				"resourceSilo" : {
+					"cost" : { "gold" : 5000, "wood" : 5 },
+					"description" : "The Barrel Silo provides you with an additional +1 wood and +1 ore each day.",
+					"id" : 15,
+					"name" : "Barrel Silo",
+					"requires" : [
+						"allOf",["fort"],["marketplace"]
+					],
+					"produce": { "wood": 1,"ore": 1 }
+				},
+				"blacksmith" : {
+					"cost" : { "gold" : 1000, "wood" : 5 },
+					"description" : "The Blacksmith provides your armies with Heal Tents.",
+					"id" : 16,
+					"name" : "Blacksmith",
+					"requires" : [
+						"allOf",["tavern"]
+					],
+				},
+				"face" : {
+					"cost" : { "gold" : 1},
+					//"cost" : { "gold" : 500, "ore" : 5},
+					"description" : "(Not working yet! Waiting nem version VCMI) The Face sculpture grants visiting heroes +1 knowledge.",
+					"id" : 17,
+					"name" : "Face",
+					"requires" : [
+						"allOf",["fort"]
+					]
+				},
+				"hordeLvl1" : {
+					"cost" : { "gold" : 1000 },
+					"description" : "The Pygmy Neighborhood increases Pygmies production by 6 per week.",
+					"id" : 18,
+					"name" : "Pygmy Neighborhood",
+					"requires" : [ 
+						"allOf",["dwellingUpLvl1"]
+					],
+					"upgrades" : "dwellingUpLvl1"
+				},
+				"hordeUpLvl1" : {
+					"cost" : { "gold" : 1000 },
+					"description" : "The Pygmy Community increases Pygmies production by 6 per week.",
+					"id" : 19,
+					"name" : "Pygmy Community",
+					"requires" : [ 
+						"allOf",["hordeLvl1"]
+					],
+					"upgrades" : "hordeLvl1"
+				},
+				"ship" : {
+					"id" : 20,
+					"upgrades" : "shipyard",
+					"requires" : [
+						"allOf",["shipyard"]
+					],
+				},
+				"vault" : {
+					"cost" : { "gold" : 1},
+					//"cost" : { "gold" : 2000, "ore" : 5, "wood" : 5, "gems": 5},
+					"description" : "(Not working yet! Waiting nem version VCMI) The Vault has no function yet.",
+					"id" : 21,
+					"name" : "Vault",
+					"requires" : [
+						"allOf",["citadel"]
+					],
+				},
+				//"special3" : {
+				//	"description" : "",
+				//	"id" : 22,
+				//	"name" : "", 
+				//	"produce": { "gold": 5000 }
+				//},
+				//"temple" : {
+				//	"cost" : { "gold" : 1},
+				//	//"cost" : { "gold" : 2000, "wood" : 10, "crystal": 5,"sulfur": 5, "mercury": 5},
+				//	"description" : "(Not working yet! Waiting nem version VCMI) The Temple allows visiting heroes learn secondary skills.",
+				//	"id" : 23,
+				//	"name" : "Temple",
+				//	"requires" : [
+				//		"allOf",["fort"],["mageGuild2"]
+				//	],
+				//},
+				"hordeLvl5" : {
+					"cost" : { "gold" : 1500 },
+					"description" : "The Spider Ruins increases Ancient Spider production by 2 per week.",
+					"id" : 24,
+					"name" : "Spider Ruins",
+					"requires" : [ 
+						"allOf",["dwellingUpLvl5"]
+					],
+					"upgrades" : "dwellingUpLvl5"
+				},
+				"hordeUpLvl5" : {
+					"cost" : { "gold" : 1500 },
+					"description" : "The Spider Domain increases Ancient Spider production by 2 per week.",
+					"id" : 25,
+					"name" : "Spider Domain",
+					"requires" : [ 
+						"allOf", ["hordeLvl5"]
+					],
+					"upgrades" : "hordeLvl5"
+				},
+				"grail" : {
+					"description" : "Flying Island increases weekly creature generation by 50% and provides your kingdom with an additional 5000 gold each day.",
+					"id" : 26,
+					"mode" : "grail",
+					"name" : "Flying Island", 
+					"produce": { "gold": 5000 }
+				},
+				"dwellingLvl1" : {
+					"cost" : { "gold" : 300, "wood" : 5, "ore" : 5},
+					"description" : "The Pygmy House allows you to recruite Pygmies.",
+					"id" : 30,
+					"name" : "Pygmy House",
+					"requires" : [ "fort" ]
+				},
+				"dwellingLvl2" : {
+					"cost" : { "gold" : 1000, "ore" : 2, "wood" : 2},
+					"description" : "The Little Paradise allows you to recruite Bird Stalkers.",
+					"id" : 31,
+					"name" : "Little Paradise",
+					"requires" : [ 
+						"allOf",["dwellingLvl1"],
+					]
+				},
+				"dwellingLvl3" : {
+					"cost" : { "gold" : 1000, "wood" : 5},
+					"description" : "The Pines allows you to recruite Stags.",
+					"id" : 32,
+					"name" : "Pines",
+					"requires" : [ 
+						"allOf",["dwellingLvl1"]
+					]
+				},
+				"dwellingLvl4" : {
+					"cost" : { "gold" : 2000, "ore" : 10, "mercury": 3},
+					"description" : "The Lonely Cavern allows you to recruite Solitaries.",
+					"id" : 33,
+					"name" : "Lonely Cavern",
+					"requires" : [ 
+						"allOf",["mageGuild1"],["dwellingLvl3"]
+					]
+				},
+				"dwellingLvl5" : {
+					"cost" : { "gold" : 2000, "ore" : 10},
+					"description" : "The Mausoleum you to recruite Giant Spiders.",
+					"id" : 34,
+					"name" : "Mausoleum",
+					"upgrades" : "dwellingUpLvl3",
+					"requires" : [ 
+						"allOf", ["dwellingUpLvl3"]
+					]
+				},
+				"dwellingLvl6" : {
+					"cost" : { "gold" : 3000, "ore" : 15},
+					"description" : "The Stonehenge you to recruite Hippogriffins.",
+					"id" : 35,
+					"name" : "Stonehenge",
+					"requires" : [ 
+						"allOf",["citadel"],["dwellingLvl4"],
+						[ "noneOf",
+				    		[ "dwellingAlternateLvl6" ]
+				    	] 
+					]
+				},
+				"dwellingLvl7" : {
+					"cost" : { "gold" : 10000, "wood" : 15, "ore": 15},
+					"description" : "The Field Ruins allows you to recruite Living Stones.",
+					"id" : 36,
+					"name" : "Field Ruins",
+					"requires" : [ 
+						"allOf", ["fort"],["dwellingLvl4"],["dwellingLvl5"]
+					]
+				},
+				"dwellingUpLvl1" : {
+					"cost" : { "gold" : 1000, "wood" : 5},
+					"description" : "The Pygmy Village allows you to recruite Pygmies Hunter.",
+					"id" : 37,
+					"name" : "Pygmy Village",
+					"upgrades" : "dwellingLvl1",
+					"requires" : [ 
+						"allOf", ["fort"]
+					]
+				},
+				"dwellingUpLvl2" : {
+					"cost" : { "gold" : 1000, "wood" : 5, "ore": 5},
+					"description" : "The Paradise allows you to recruite Sky Hunters.",
+					"id" : 38,
+					"name" : "Paradise",
+					"upgrades" : "dwellingLvl2"
+				},
+				"dwellingUpLvl3" : {
+					"cost" : { "gold" : 1000, "wood" : 5},
+					"description" : "The Forest allows you to recruite High Stags.",
+					"id" : 39,
+					"name" : "Forest"
+				},
+				"dwellingUpLvl4" : {
+					"cost" : { "gold" : 2000, "wood" : 5, "mercury": 3, "gems": 1},
+					"description" : "The Druidic Cavern allows you to recruite Hermits.",
+					"id" : 40,
+					"name" : "Druidic Cavern",
+					"upgrades" : "dwellingLvl4",
+					"requires" : [ 
+						"allOf", ["mageGuild2"]
+					]
+				},
+				"dwellingUpLvl5" : {
+					"cost" : { "gold" : 1500, "ore" : 5, "gems": 5},
+					"description" : "The Secular Mausoleumallows you to recruite Ancient Spiders.",
+					"id" : 41,
+					"name" : "Abandoned Temple",
+					"upgrades" : "dwellingLvl5"
+				},
+				"dwellingUpLvl6" : {
+					"cost" : { "gold" : 3000, "ore" : 15},
+					"description" : "The Stonehenge's Nest allows you to recruite Great Hippogriffins.",
+					"id" : 42,
+					"name" : "Stonehenge's Nest",
+					"upgrades" : "dwellingLvl6",
+					"requires" : [ 
+						"allOf", ["castle"]
+					]
+				},
+				"dwellingUpLvl7" : {
+					"cost" : { "gold" : 15000, "ore" : 30, "wood" : 20},
+					"description" : "The Ancient Ruins allows you to recruite Living Ruins.",
+					"id" : 43,
+					"name" : "Ancient Ruins",
+					"upgrades" : "dwellingLvl7",
+					"requires" : [ 
+						"allOf", ["dwellingLvl6"]
+					]
+				},
+				"dwellingUpUpLvl3" : {
+					"cost" : { "gold" : 1000, "wood" : 5, "crystal": 5},
+					"description" : "The Dark Forest allows you to recruite Dark Stags.",
+					"id" : 46,
+					"name" : "Dark Forest",
+					"upgrades" : "dwellingUpLvl3",
+					"requires" : [ 
+						"allOf",["mageGuild1"]
+					]
+				},
+				"dwellingAlternateLvl6" : {
+					"cost" : { "gold" : 3000, "wood" : 15},
+					"description" : "The Temple you to recruite Priestess.",
+					"id" : 49,
+					"name" : "Temple",
+					"requires" : [ 
+						"allOf", ["dwellingLvl5"],
+						[ "noneOf",
+				    		[ "dwellingLvl6" ]
+				    	] 
+					]
+				},
+				"dwellingAlternateUpLvl6" : {
+					"cost" : { "gold" : 3000, "wood" : 15},
+					"description" : "The Temple you to recruite High Priestess.",
+					"id" : 56,
+					"name" : "Godess Temple",
+					"upgrades" : "dwellingAlternateLvl6",
+					"requires" : [ 
+						"allOf", ["face"],["mageGuild3"]
+					]
+				}
+			}
+		}
+	}
+}

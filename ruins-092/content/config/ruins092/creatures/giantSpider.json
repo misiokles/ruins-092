@@ -1,0 +1,81 @@
+{
+	"rn092_giantSpider" : 
+	{
+		"name" :
+		{
+			"singular" : "Giant Spider",
+			"plural" : "Giant Spiders"
+		},
+		"upgrades":
+		[
+			"rn092_ancientSpider"
+		],
+		"level" : 5,
+		"special" : false,
+		"faction" : "ruins_092", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 0,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 540
+		},
+		"fightValue" : 777,
+		"aiValue" : 848,
+		"growth" : 3,
+		
+		"attack" : 12,
+		"defense" : 10,
+		"hitPoints" : 50,
+		"shots" : 0,
+		"speed" : 5,
+		"damage" :
+		{
+			"min" : 11,
+			"max" : 13
+		},
+		"spellPoints" : 0,
+		"advMapAmount" :
+		{
+			"min" : 8,
+			"max" : 15
+		},
+		"doubleWide" : true,
+		"abilities" : {
+			"poison" : {
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.sorrow",
+				"val" : 10
+			},
+			"predator" : { 
+				"type" : "NO_MORALE"
+			}
+		},
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "ruins092/creatures/giantSpider/battle.def",
+			"map" : "ruins092/creatures/giantSpider/adventure.def",
+			"iconSmall" : "ruins092/creatures/giantSpider/small.png",
+			"iconLarge" : "ruins092/creatures/giantSpider/large.png",
+			"timeBetweenFidgets" : 1.00,
+			"animationTime" :
+			{
+				"walk" : 1.05,
+				"idle" : 13.00,
+				"attack" : 1.10
+			}
+		},
+		"sound" :
+		{
+			"attack": "BASLATTK.wav",
+			"defend": "BASLDFND.wav",
+			"killed": "BASLKILL.wav",
+			"move": "BASLMOVE.wav",
+			"wince": "BASLWNCE.wav"
+		}
+	}
+}

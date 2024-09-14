@@ -1,0 +1,81 @@
+{
+	"rn092_darkStag" : 
+	{
+		"name" :
+		{
+			"singular" : "Dark Stag",
+			"plural" : "Dark Stags "
+		},
+		"level" : 3,
+		"special" : false,
+		"faction" : "ruins_092", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 0,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 220
+		},
+		"fightValue" : 366,
+		"aiValue" : 373,
+		"growth" : 7,
+		
+		"attack" : 9,
+		"defense" : 9,
+		"hitPoints" : 25,
+		"shots" : 0,
+		"speed" : 8,
+		"damage" :
+		{
+			"min" : 4,
+			"max" : 6
+		},
+		"spellPoints" : 0,
+		"advMapAmount" :
+		{
+			"min" : 10,
+			"max" : 18
+		},
+		"doubleWide" : true,
+		"abilities" : {
+			"engage" : { 
+				"type" : "CHARGE_IMMUNITY"
+			},
+			"morale" : { 
+				"type" : "MORALE",
+				"val" : 1,
+				"valueType" : "INDEPENDENT_MAX"
+			},
+			"horns": {
+				"type": "JOUSTING"
+			}
+		},
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "ruins092/creatures/darkStag/battle.def",
+			"map" : "ruins092/creatures/darkStag/adventure.def",
+			"iconSmall" : "ruins092/creatures/darkStag/small.png",
+			"iconLarge" : "ruins092/creatures/darkStag/large.png",
+			"timeBetweenFidgets" : 0.80,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 11.00,
+				"attack" : 1.00
+			}
+		},
+		"sound" :
+		{
+			"attack": "WUNCATTK.wav",
+			"defend": "WUNCDFND.wav",
+			"killed": "WUNCKILL.wav",
+			"move": "WUNCMOVE.wav",
+			"shoot": "WUNCSHOT.wav",
+			"wince": "WUNCWNCE.wav"
+		}
+	}
+}

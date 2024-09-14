@@ -1,0 +1,81 @@
+{
+	"rn092_ancientSpider" : 
+	{
+		"name" :
+		{
+			"singular" : "Ancient Spider",
+			"plural" : "Ancient Spiders"
+		},
+		"level" : 5,
+		"special" : false,
+		"faction" : "ruins_092", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 0,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 630
+		},
+		"fightValue" : 1035,
+		"aiValue" : 1152,
+		"growth" : 3,
+		
+		"attack" : 14,
+		"defense" : 10,
+		"hitPoints" : 60,
+		"shots" : 0,
+		"speed" : 7,
+		"damage" :
+		{
+			"min" : 11,
+			"max" : 15
+		},
+		"spellPoints" : 0,
+		"advMapAmount" :
+		{
+			"min" : 7,
+			"max" : 13
+		},
+		"doubleWide" : true,
+		"abilities" : {
+			"fear" : { 
+				"type" : "FEAR"
+			},
+			"predator" : { 
+				"type" : "NO_MORALE"
+			},
+			"poison" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.sorrow",
+				"val" : 15
+			}
+		},
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "ruins092/creatures/ancientSpider/battle.def",
+			"map" : "ruins092/creatures/ancientSpider/adventure.def",
+			"iconSmall" : "ruins092/creatures/ancientSpider/small.png",
+			"iconLarge" : "ruins092/creatures/ancientSpider/large.png",
+			"timeBetweenFidgets" : 1.00,
+			"animationTime" :
+			{
+				"walk" : 1.10,
+				"idle" : 15.00,
+				"attack" : 1.10
+			}
+		},
+		"sound" :
+		{
+			"attack": "BASLATTK.wav",
+			"defend": "BASLDFND.wav",
+			"killed": "BASLKILL.wav",
+			"move": "BASLMOVE.wav",
+			"wince": "BASLWNCE.wav"
+		}
+	}
+}

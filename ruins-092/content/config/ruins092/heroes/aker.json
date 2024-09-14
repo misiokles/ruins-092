@@ -1,0 +1,44 @@
+{
+	"rn092_aker" : {
+		"army" : [
+			{ "creature" : "dendroidGuard", "max" : 6, "min" : 3 }
+		],
+		"class" : "runemaster_092",
+		"spellbook" : [ "disruptingRay" ],
+		"images" : {
+			"large" : "ruins092/heroes/aker/large.bmp",
+			"small" : "ruins092/heroes/aker/small.bmp",
+			"specialtyLarge" : "ruins092/heroes/aker/slarge.bmp",
+			"specialtySmall" : "ruins092/heroes/aker/ssmall.bmp"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "offence" },
+			{ "level" : "basic", "skill" : "mysticism" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"effect1" :
+					{
+						"type" : "ENEMY_DEFENCE_REDUCTION",
+						"val" : 5
+					},
+				"effect2" :
+					{
+						"limiters" : ["SHOOTER_ONLY"],
+						"type" : "ENEMY_DEFENCE_REDUCTION",
+						"val" : 0
+					}
+
+			}
+		},
+		"texts" : {
+			"biography" : "Aker is master of the rune of weakness. It brings out the negativity it hides in each one. There is no force where there is insecurity. And that's where the battle is lost.",
+			"name" : "Aker",
+			"specialty" : {
+				"description" : "Creatures melee attack reduces enemy defense.",
+				"name" : "Weakness Rune",
+				"tooltip" : "Creatures melee attack reduces enemy defense. Start with Disrupting Ray."
+			}
+		}
+	}
+}

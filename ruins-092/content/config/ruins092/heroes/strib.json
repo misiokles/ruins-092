@@ -1,0 +1,39 @@
+{
+	"rn092_strib" : {
+		"army" : [
+			{ "creature" : "rn092_skyHunter", "max" : 15, "min" : 10 },
+			{ "creature" : "rn092_highStag", "max" : 7, "min" : 3 }
+		],
+		"class" : "hermit_092",
+		"spellbook" : [],
+		"images" : {
+			"large" : "ruins092/heroes/strib/large.png",
+			"small" : "ruins092/heroes/strib/small.png",
+			"specialtyLarge" : "ruins092/heroes/strib/slarge.png",
+			"specialtySmall" : "ruins092/heroes/strib/ssmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "airMagic" },
+			{ "level" : "basic", "skill" : "waterMagic" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"iceBolt" :
+					{ 
+						"subtype" : "spell.iceBolt", 
+						"type" : "SPECIAL_SPELL_LEV", 
+						"val" : 5
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Strib is a controversial spirit about the vigor of the forest. Main defender of a cold and static existence, he avoids coexistence with other leaders, while he secretly joins his private forces.",
+			"name" : "Strib",
+			"specialty" : {
+				"description" : "Casts Ice Bolt with damage increased by 5% for every n hero levels (n - target creature level).",
+				"name" : "Cold",
+				"tooltip" : "Casts Ice Bolt with damage increased by 5% for every n hero levels (n - target creature level)."
+			}
+		}
+	}
+}

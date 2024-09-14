@@ -1,0 +1,42 @@
+{
+	"rn092_tapio" : {
+		"army" : [
+			{ "creature" : "rn092_highStag", "max" : 10, "min" : 5 },
+			{ "creature" : "rn092_darkStag", "max" : 5, "min" : 3 }
+		],
+		"class" : "runemaster_092",
+		"spellbook" : [ "protectFire","protectAir","protectWater" ],
+		"images" : {
+			"large" : "ruins092/heroes/tapio/large.png",
+			"small" : "ruins092/heroes/tapio/small.png",
+			"specialtyLarge" : "ruins092/heroes/tapio/slarge.png",
+			"specialtySmall" : "ruins092/heroes/tapio/ssmall.png"
+		},
+		"skills" : [
+			{ "level" : "advanced", "skill" : "resistance" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"aura": 
+					{
+						"type" : "SPELL_RESISTANCE_AURA",
+						"val" : 5
+					},
+				"magicRes" :
+					{
+						"type" : "MAGIC_RESISTANCE",
+						"val" : 5
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Tapio is master of the protection rune. Tapeworm of a tribe of wizards, Tapio dedicated his youth to prove the evil that his people caused to the others. Defender of the ideal of community, his main weapon is mutual protection.",
+			"name" : "Tapio",
+			"specialty" : {
+				"description" : "Creatures have spell resistance aura and natural magic resistance.",
+				"name" : "Protection Rune",
+				"tooltip" : "Creatures have spell resistance aura and natural magic resistance. Starts with protection from air, fire and water."
+			}
+		}
+	}
+}

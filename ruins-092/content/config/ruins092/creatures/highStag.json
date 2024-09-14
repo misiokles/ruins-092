@@ -1,0 +1,80 @@
+{
+	"rn092_highStag" : 
+	{
+		"name" :
+		{
+			"singular" : "High Stag",
+			"plural" : "High Stags "
+		},
+		"upgrades":
+		[
+			"rn092_darkStag"
+		],
+		"level" : 3,
+		"special" : false,
+		"faction" : "ruins_092", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 0,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 200
+		},
+		"fightValue" : 308,
+		"aiValue" : 308,
+		"growth" : 7,
+		
+		"attack" : 8,
+		"defense" : 8,
+		"hitPoints" : 21,
+		"shots" : 0,
+		"speed" : 7,
+		"damage" :
+		{
+			"min" : 3,
+			"max" : 6
+		},
+		"spellPoints" : 0,
+		"advMapAmount" :
+		{
+			"min" : 14,
+			"max" : 25
+		},
+		"doubleWide" : true,
+		"abilities" : {
+			"engage" : { 
+				"type" : "CHARGE_IMMUNITY"
+			},
+			"horns": {
+				"type": "JOUSTING"
+			}
+		},
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "ruins092/creatures/highStag/battle.def",
+			"map" : "ruins092/creatures/highStag/adventure.def",
+			"iconSmall" : "ruins092/creatures/highStag/small.png",
+			"iconLarge" : "ruins092/creatures/highStag/large.png",
+			"timeBetweenFidgets" : 1.00,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 22.00,
+				"attack" : 1.10
+			}
+		},
+		"sound" :
+		{
+			"attack": "WUNCATTK.wav",
+			"defend": "WUNCDFND.wav",
+			"killed": "WUNCKILL.wav",
+			"move": "WUNCMOVE.wav",
+			"shoot": "WUNCSHOT.wav",
+			"wince": "WUNCWNCE.wav"
+		}
+	}
+}

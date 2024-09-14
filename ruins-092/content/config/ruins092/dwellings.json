@@ -1,0 +1,104 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"index" :17,
+		"handler": "dwelling",
+		"base" : {
+			"base" : {
+				"visitableFrom" : [ "---", "+++", "+++" ],
+				"mask" : [ "VVV", "VBB", "VAA" ]
+			},
+			"sounds" : {
+				"ambient" : ["LOOPSWOR"],
+				"visit" : ["MILITARY"]
+			}
+		},
+		"types" : {
+			"rn092_pygmyVillage": {
+				"name" : "Pygmy Village",
+				"creatures": [["rn092_pygmy"]],
+				"templates" : {
+					"default" : {
+						"animation" : "ruins092/map/pygmy",
+					}
+				}
+			},
+			"rn092_paradise": {
+				"name" : "Paradise",
+				"creatures": [["rn092_birdStalker"]],
+				"sounds": {
+					"ambient": ["LOOPUNIC"]
+				},
+				"templates" : {
+					"default" : {
+						"animation" : "ruins092/map/paradise",
+					}
+				}
+			},
+			"rn092_forest": {
+				"name" : "Pine Forest",
+				"creatures": [["rn092_stag"]],
+				"sounds": {
+					"ambient": ["LOOPGARD"]
+				},
+				"templates" : {
+					"default" : {
+						"animation" : "ruins092/map/forest",
+					}
+				}
+			},
+			"rn092_hermitCave": {
+				"name" : "Hermit Cavern",
+				"creatures": [["rn092_solitary"]],
+				"sounds": {
+					"ambient": ["LOOPCAVE"]
+				},
+				"templates" : {
+					"default" : {
+						"animation" : "ruins092/map/cavern",
+					}
+				}
+			},
+			"rn092_spiderDomain": {
+				"name" : "Spider Domain",
+				"creatures": [["rn092_giantSpider"]],
+				"sounds": {
+					"ambient": ["LOOPCAVE"]
+				},
+				"templates" : {
+					"default" : {
+						"animation" : "ruins092/map/temple",
+					}
+				}
+			},
+			"rn092_ruinsNest": {
+				"name" : "Ruins Nest",
+				"creatures": [["rn092_hippogriff"]],
+				"sounds": {
+					"ambient": ["LOOPGRIF"]
+				},
+				"templates" : {
+					"default" : {
+						"animation" : "ruins092/map/cliff",
+					}
+				}
+			},
+			"rn092_ruins": {
+				"name" : "Ancient Ruins",
+				"creatures": [["rn092_livingStone"]],
+				"sounds": {
+					"ambient": ["LOOPGARD"]
+				},
+				"templates" : {
+					"default" : {
+						"animation" : "ruins092/map/ruins",
+					}
+				}
+			}
+		},	
+	},
+
+	"core:creatureGeneratorSpecial" : {
+		"types" : {
+		}
+	}
+}

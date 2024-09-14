@@ -1,0 +1,39 @@
+{
+	"rn092_taloc" : {
+		"army" : [
+			{ "creature" : "rn092_hermit", "max" : 4, "min" : 2 },
+			{ "creature" : "rn092_hermit", "max" : 2, "min" : 1 }
+		],
+		"class" : "hermit_092",
+		"spellbook" : [ "magicMirror" ],
+		"images" : {
+			"large" : "ruins092/heroes/taloc/large.png",
+			"small" : "ruins092/heroes/taloc/small.png",
+			"specialtyLarge" : "ruins092/heroes/taloc/slarge.png",
+			"specialtySmall" : "ruins092/heroes/taloc/ssmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "sorcery" },
+			{ "level" : "basic", "skill" : "resistance" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"magicMirror" :
+					{ 
+						"subtype" : "spell.magicMirror", 
+						"type" : "SPECIAL_SPELL_LEV", 
+						"val" : 10
+					}
+			}
+		},
+		"texts" : {
+			"biography" : "Taloc is a magical vengeful reactive spirit. He does not believe in the ferocity of an offensive spell, but in consistent protection and even more in effective retaliation.",
+			"name" : "Taloc",
+			"specialty" : {
+				"description" : "Casts Magic Mirror with effect increased by 10% for every n hero levels (n - target creature level).",
+				"name" : "Magic Mirror",
+				"tooltip" : "Casts Magic Mirror with effect increased by 10% for every n hero levels (n - target creature level)."
+			}
+		}
+	}
+}
